@@ -38,8 +38,8 @@ body {
 
 .instagram-continue{
     display: flex;
-    align-items: center; /*horizontal*/
-    justify-content: space-around; /*vertical*/
+    align-items: center; 
+    justify-content: space-around;                                                                                  
     flex-direction: column;
     width: 50%;
     min-height: 34rem;
@@ -123,13 +123,32 @@ body {
 
  }
 
-.app-download:nth-child(1){
+.app-download:nth-child(1) {
 
      background-image: url('./img/button-aple.png');
 
  }
-.app-download:nth-child(2){
+.app-download:nth-child(2) {
 
     background-image: url('./img/button.png');
 }
 
+/* media queries*/
+@media (max-width: 1024px){
+    .instagram-wrapper{
+        width: 90%;
+    }
+}
+@media (max-width: 680px){
+    .instagram-wrapper{
+        width: 90%;
+    }
+
+.instagram-phone{
+    display: none;
+    
+ }
+ .instagram-continue{
+     width: 100%;
+ }
+}
